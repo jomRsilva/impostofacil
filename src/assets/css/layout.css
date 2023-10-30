@@ -1,0 +1,51 @@
+/* Cabeçalho */
+
+.cabecalho {
+	width: 100%;
+	align-items: center;
+	height: 68px;
+	background: var(--azul);
+	padding: 0 21px;
+	justify-content: space-between;
+}
+	.logo_side {
+		align-items: center;
+	}
+		.irpf_logo {
+			height: 40px;
+			color: #fff;
+			filter: invert(100);
+		}
+		.logo_side span {
+			color: #fff;
+			font-weight: 900;
+			font-size: 1em;
+			margin-left: 13px;
+		}
+
+	.profile_side {
+		align-items: center;
+	}
+
+		.profile_button {
+			width: 42px;
+			height: 42px;
+			background: url('../img/defaultprofile.jpg');
+			background-position: center;
+			background-size: cover;
+			font-size: 0;
+			border-radius: 100%;
+			border: 2px solid #fff;
+			cursor: pointer;
+		}
+
+@media (max-width: 576px) {
+	.cabecalho {
+		height: 55px;
+	}
+	.irpf_logo {
+		height: 34px;
+		color: #fff;
+		filter: invert(100);
+	}
+}

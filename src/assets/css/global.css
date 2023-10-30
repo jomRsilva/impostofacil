@@ -29,3 +29,25 @@
 body {
 	background-color: var(--bg);
 }
+
+.dflex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+a, a * {transition: .2s ease;}
+
+/*
+
+@media (max-width: 576px) {  }
+
+@media (max-width: 768px) {  }
+
+@media (max-width: 992px) {  }
+
+@media (max-width: 1200px) {  }
+
+*/
