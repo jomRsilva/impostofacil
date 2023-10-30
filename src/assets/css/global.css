@@ -1,0 +1,31 @@
+:root {
+	--bg: #F2F2F2;
+	--azul: #0511FA;
+	--rosa: #F51AA4;
+	--amarelo: #FFE347;
+	--verde: #5DD9C1;
+	--blc-1: #31263D;
+	--blc-2: #524660;
+	--blc-3: #6B6176;
+	--wht-1: #FCFCFC;
+	--wht-1: #F2F2F2;
+	--wht-1: #E5E4E5;
+	--wht-1: #D7D6D7;
+	--wht-1: #C7C6C7;
+	--wht-1: #B4B2B5;
+	--wht-1: #A2A0A4;
+
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Poppins, sans-serif;
+	color: var(--blc-2);
+	text-decoration: none;
+}
+
+body {
+	background-color: var(--bg);
+}
