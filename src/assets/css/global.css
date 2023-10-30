@@ -38,7 +38,7 @@ body {
 	display: flex;
 }
 
-a, a * {transition: .2s ease;}
+a, a *, button, button * {transition: .2s ease;}
 
 /*
 
