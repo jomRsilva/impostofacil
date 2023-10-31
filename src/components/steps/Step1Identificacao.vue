@@ -412,9 +412,9 @@
 
 <script>
 
-import InputTextBox from '../components/form/InputTextBox.vue'
-import RadioBox from '../components/form/RadioBox.vue'
-import SelectBox from '../components/form/SelectBox.vue'
+import InputTextBox from '../form/InputTextBox.vue'
+import RadioBox from '../form/RadioBox.vue'
+import SelectBox from '../form/SelectBox.vue'
 
 export default {
 

@@ -285,4 +285,23 @@
 			margin-top: 13px;
 			justify-content: space-between;
 		}
+
+	.hiddenfield_question {
+		flex-direction: column;
+	}
+		.hiddenfield_question .material-icons {
+			font-size: 3.5em;
+			text-align: center;
+			margin-bottom: 21px;
+		}
+		.hiddenfield_question .question_body {
+			margin: 0;
+		}
+				.hiddenfield_question .question_body .btn_group .btn {
+					justify-content: center;
+				}
+					.hiddenfield_question .question_body .btn_group .btn:last-child small {
+						font-size: .9em;
+					}
+
 }

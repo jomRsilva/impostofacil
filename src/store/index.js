@@ -6,13 +6,7 @@ export default createStore({
 		mobNavReq: false,
 
 		// setp focus
-		step1Focus: true,
-		step2Focus: false,
-		step3Focus: false,
-		step4Focus: false,
-		step5Focus: false,
-		step6Focus: false,
-		step7Focus: false,
+		stepFocus: 1,
 
 		// Value Storage
 		declaracaoAnteriorNumero: '',
