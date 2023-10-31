@@ -5,14 +5,17 @@
 				<span class="material-icons"> emergency </span> Obrigatório
 			</small>
 			<div class="dflex input_container">
-				<input :type="type" name="" :placeholder="placeholderText">
+				<select name="" id="">
+					<option value="" disabled selected> {{ disable }} </option>
+					<option v-for="(option, index) in optionsList" :key="index" :value="optionsList[index]" > {{ optionsList[index] }} </option>
+				</select>
 			</div>
 		</div>
 </template>
 
 <script>
 export default {
-	name: 'InputTextBox',
+	name: 'SelectBox',
 	data() {
 		return {
 			localVModel: ''
@@ -21,10 +24,9 @@ export default {
 	props: {
 		sizeType: String,
 		labelText: String,
-		placeholderText: String,
-		vModel: String,
+		disable: String,
+		optionsList: [],
 		isrequired: Boolean,
-		type: String
 	},
 
 	created() {

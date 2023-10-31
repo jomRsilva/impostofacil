@@ -8,5 +8,6 @@ require("./assets/css/layout.css");
 require("./assets/css/form.css");
 require("./assets/css/home.css");
 require("./assets/css/asidenav.css");
+require("./assets/css/custom.css");
 
 createApp(App).use(store).use(router).mount('#app')

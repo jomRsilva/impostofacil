@@ -1,5 +1,5 @@
 .aside_nav {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	flex-direction: column;
 	width: 322px;
@@ -142,7 +142,7 @@
 	}
 
 #asideHint {
-	margin-top: 13px;
+	margin-top: 0px;
 }
 
 	.hint_par p {
@@ -186,6 +186,10 @@
 		width: 100%;
 		top: 55px;
 		display: none;
+		z-index: 2;
+		box-shadow: 0 21px 34px -13px rgba(0,0,0,.21);
+		padding-bottom: 89px;
+		position: absolute;
 	}
 		.nav_close_mob, .mob_open_navlist, .isMobNavReq {
 			display: -webkit-box;

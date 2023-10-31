@@ -83,7 +83,7 @@
 		<div id="asideHint" class="dflex hint_par">
 			<span class="material-icons"> info </span>
 			<p>
-				Aviso: os valores acima são referentes à um cálculo preliminar simples e podem não refletir os valores finais. Preencha todas as etapas e caso queira alterar o tipo de cálculo, você poderá fazê-lo na última etapa do processo em “Revisão e cálculo”.
+				Você poderá escolher a Tributação por Deduções Legais ou por desconto simplificado em "Revisão e cálculo"
 			</p>
 		</div>
 
