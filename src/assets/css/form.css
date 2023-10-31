@@ -2,5 +2,158 @@
 
 .form_page_container {
 	max-width: 1044px;
-	background-color: #ccc;
 }
+
+@media (min-width: 1920px) {
+	.form_page_container {
+		max-width: 1600px!important;
+	}
+}
+
+	.setp_title {
+		font-size: 2em;
+		font-weight: 700;
+		line-height: normal;
+		margin-bottom: 21px;
+	}
+
+	.setp_par {
+		font-size: .9em;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		color: var(--blc-3);
+	}
+		.stepPar_margin {
+			margin: 21px 0;
+		}
+
+	.setp_hr {
+		border: none;
+		height: 1px;
+		width: 100%;
+		margin: 34px 0;
+		background: #D7D6D7;
+	}
+
+@media (max-width: 576px) {
+	.setp_title {
+		font-size: 1.6em;
+	}
+}
+
+/* inputs */
+
+.input_row {
+	width: 100%;
+}
+
+.input_box {
+	width: 50%;
+	flex-direction: column;
+	position: relative;
+}
+
+	.input_box label {
+		color: #524660;
+		font-size: .9em;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+
+	.input_box .input_container {
+		width: 100%;
+		margin-top: 8px;
+	}
+		.input_container input,
+		.input_container select,
+		.input_container textarea {
+			width: 100%;
+			height: 40px;
+			border: none;
+			border-bottom: 2px solid #A2A0A4;
+			outline: none;
+			padding: 0 8px;
+			transition: .1s ease;
+		}
+			.input_container input:hover,
+			.input_container select:hover,
+			.input_container textarea:hover {
+				border-color: var(--blc-3);
+				cursor: pointer;
+			}
+			.input_container input:focus,
+			.input_container select:focus,
+			.input_container textarea:focus {
+				border-color: var(--azul);
+				cursor: text;
+			}
+
+	.required_badge {
+		position: absolute;
+		top: 0;
+		right: 0;
+		align-items: center;
+		font-size: .7em;
+		color: var(--blc-3);
+		font-weight: 500;
+	}
+		.required_badge span {
+			font-size: 1.2em;
+		}
+
+	/* size types */
+	.normal_size {
+		width: 50%;
+	}
+	.full_size {
+		width: 100%;
+	}
+	.third_size {
+		width: 33%;
+	}
+
+@media (max-width: 576px) {
+	.normal_size, .full_size, .third_size {
+		width: 100%;
+	}
+}
+
+.blankspace {
+	border: none;
+	background: none;
+	width: 100%;
+	height: 55px;
+}
+	.small_blkspc {
+		height: 34px!important;
+	}
+
+/* hidden field */
+
+.hiddenfield_question {
+	width: 100%;
+	border: 1px solid #D7D6D7;
+	background: #FFF;
+	padding: 34px;
+}
+	.question_body {
+		flex-direction: column;
+		margin-left: 34px;
+	}
+
+	.question_body p {
+		font-size: .9em;
+	}
+		.question_body .btn_group {
+			margin-top: 21px;
+		}
+			.question_body .btn_group button small {
+				font-size: 1em;
+			}
+
+		.hiddenfield_question .material-icons {
+			font-size: 2em;
+			color: #B4B2B5;
+		}
