@@ -11,6 +11,9 @@
 	<!-- profile -->
 	<div class="dflex profile_side">
 		<a class="profile_button"> profilebutton </a>
+		<button @click="toggleNavInMob" class="dflex mob_open_navlist">
+			<span class="material-icons"> checklist </span>
+		</button>
 	</div>
 
 </header>
@@ -20,7 +23,13 @@
 <script>
 export default {
 
-	name: 'Header'
+	name: 'Header',
+
+	methods: {
+		toggleNavInMob () {
+			this.$store.state.mobNavReq = !this.$store.state.mobNavReq
+		}
+	}
 
 }
 </script>

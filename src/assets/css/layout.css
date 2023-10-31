@@ -48,6 +48,9 @@
 		color: #fff;
 		filter: invert(100);
 	}
+	.profile_side {
+		margin-right: -21px;
+	}
 }
 
 /* Home/Page container */
@@ -139,3 +142,7 @@
 	font-style: normal;
 	font-weight: 500;
 }
+
+	.section_title_redux {
+		font-size: 1em;
+	}
