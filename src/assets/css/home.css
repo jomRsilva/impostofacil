@@ -35,8 +35,11 @@
 			}
 
 	.home_hero p {
-		margin-top: 13px;
+		margin: 21px 0;
 	}
+		.home_hero p strong {
+			font-weight: 600;
+		}
 
 		.home_hero .btn_group {
 			margin-top: 21px;
@@ -73,4 +76,88 @@
 			margin-top: 13px;
 		}
 
+}
+
+/* Lista de anos */
+
+#homePageContainer .section_title {
+	margin: 34px 0;
+}
+
+	.anos_list {
+		width: 100%;
+		margin-top: 21px;
+	}
+
+		.anos_list .ano_card {
+			width: 100%;
+			margin-right: 13px;
+			flex-direction: column;
+			border-radius: 5px;
+			background: #FFF;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+			height: 89px;
+			padding: 13px;
+			cursor: pointer;
+			transition: .1s ease-in-out;
+		}
+			.ano_card:last-child {
+				margin-right: 0;
+			}
+				.ano_card:hover {
+					background: var(--azul);
+				}
+					.ano_card:hover * {
+						color: #fff!important;
+					}
+
+			.status_badge {
+				display: inherit;
+				align-items: center;
+			}
+				.status_badge small {
+					font-size: .75em;
+				}
+				.status_badge span {
+					font-size: 1em;
+					margin-left: 5px;
+				}
+				.ano_card strong {
+					font-size: 1.4em;
+					font-weight: 700;
+					color: var(--blc-3);
+				}
+
+					.stsBdg_success span {color: var(--verde);}
+					.stsBdg_wait span {color: var(--blc-3);}
+					.stsBdg_alert span {color: var(--rosa);}
+
+@media (max-width: 576px) {
+	.anos_list {
+		flex-direction: column;
+	}
+		.anos_list li {
+			margin-right: 0;
+			margin-bottom: 13px;
+			flex-direction: row!important;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 21px!important;
+		}
+			.anos_list li:last-child {
+				margin-bottom: 0px;
+			}
+			.status_badge small {
+				font-size: .8em;
+			}
+			.status_badge span {
+				font-size: 1.4em!important;
+				margin-left: 8px;
+			}
+}
+
+@media (min-width: 1920px) {
+	.anos_list li {
+		max-width: 233px;
+	}
 }

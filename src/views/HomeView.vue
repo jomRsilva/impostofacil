@@ -1,7 +1,8 @@
 <template>
-  <main class="dlfex page_container">
+  <main id="homePageContainer" class="dlfex page_container">
 
 		<!-- hero -->
+
 		<section class="dflex home_hero">
 			<div class="dflex home_hgroup">
 				<h1> Ano atual </h1>
@@ -26,8 +27,63 @@
 			</div>
 		</section>
 
-		<router-link to="/formulario"> Formulario </router-link>
-		<router-link to="/conclusao"> Conclusao </router-link>
+		<!-- Lista de anos -->
+
+		<h3 class="section_title"> Anos anteriores </h3>
+
+		<p class="dft_par">
+			Caso precise consultar entregas anteriores, clique/toque sobre o ano desejado:
+		</p>
+
+		<ul class="dflex anos_list">
+			<li class="dflex ano_card">
+				<strong> 2018 </strong>
+				<div class="status_badge stsBdg_success">
+					<small> Entregue e processado </small>
+					<span class="material-icons"> check_circle </span>
+				</div>
+			</li>
+
+			<li class="dflex ano_card">
+				<strong> 2019 </strong>
+				<div class="status_badge stsBdg_success">
+					<small> Entregue e processado </small>
+					<span class="material-icons"> check_circle </span>
+				</div>
+			</li>
+
+			<li class="dflex ano_card">
+				<strong> 2020 </strong>
+				<div class="status_badge stsBdg_success">
+					<small> Entregue e processado </small>
+					<span class="material-icons"> check_circle </span>
+				</div>
+			</li>
+
+			<li class="dflex ano_card">
+				<strong> 2021 </strong>
+				<div class="status_badge stsBdg_success">
+					<small> Entregue e processado </small>
+					<span class="material-icons"> check_circle </span>
+				</div>
+			</li>
+
+			<li class="dflex ano_card">
+				<strong> 2022 </strong>
+				<div class="status_badge stsBdg_wait">
+					<small> Entregue e em análise </small>
+					<span class="material-icons"> pending </span>
+				</div>
+			</li>
+
+			<li class="dflex ano_card">
+				<strong> 2023 </strong>
+				<div class="status_badge stsBdg_alert">
+					<small> Não entregue </small>
+					<span class="material-icons"> error </span>
+				</div>
+			</li>
+		</ul>
   </main>
 </template>
 
