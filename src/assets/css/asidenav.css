@@ -7,6 +7,7 @@
 	background: #E5E4E5;
 	min-height: calc(100vh - 68px);
 	padding: 34px;
+	z-index: 2;
 }
 	.aside_nav h4 {
 		color: #6B6176;

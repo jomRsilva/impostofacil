@@ -42,6 +42,7 @@
 	}
 	.setp_par {
 		font-size: .8em;
+		line-height: 1.6em;
 	}
 	.section_title {
 		font-size: 1.3em;
@@ -261,6 +262,10 @@
 		font-size: 1em;
 	}
 
+.options_row {
+	width: 100%; margin: 34px 0;
+}
+
 @media (max-width: 576px) {
 	.radio_box {
 		flex-direction: column;
@@ -303,5 +308,16 @@
 					.hiddenfield_question .question_body .btn_group .btn:last-child small {
 						font-size: .9em;
 					}
+
+	.options_row {
+		margin: 55px 0;
+	}
+		.options_row button {
+			width: 100%;
+			justify-content: space-between;
+		}
+			.options_row button small {
+				font-size: 1em;
+			}
 
 }

@@ -28,6 +28,9 @@ export default {
 	methods: {
 		toggleNavInMob () {
 			this.$store.state.mobNavReq = !this.$store.state.mobNavReq
+			window.scroll({
+				top: 0, behavior: 'smooth'
+			})
 		}
 	}
 

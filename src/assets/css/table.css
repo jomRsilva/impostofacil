@@ -76,3 +76,12 @@
 		font-size: .8em;
 	}
 }
+
+@media (max-width: 576px) {
+	.table_row {
+		width: min-content;
+	}
+	.table_area {
+		overflow-x: scroll;
+	}
+}

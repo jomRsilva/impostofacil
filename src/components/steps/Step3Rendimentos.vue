@@ -66,13 +66,13 @@
 			</div>
 			<!-- body -->
 			<div class="dflex table_row table_body" v-for="(i, index) in 7" :key="index">
-				<div class="dflex table_cell tbId1_number"> <small> 1 </small> </div>
+				<div class="dflex table_cell tbId1_number"> <small> {{ index }} </small> </div>
 				<div class="dflex table_cell tbId1_fonteNome"> <small> Guilherme e Carlos Telas ME </small> </div>
 				<div class="dflex table_cell tbId1_fonteCnpj"> <small> 28.966.014/0001-83 </small> </div>
 				<div class="dflex table_cell tbId1_rendimentos"> <small> R$ 30.210,00 </small> </div>
 				<div class="dflex table_cell tbId1_previdencia"> <small> R$ 1.830,00 </small> </div>
 				<div class="dflex table_cell tbId1_impostoRetido"> <small> R$ 2.550,00 </small> </div>
-				<div class="dflex table_cell tbId1_13"> <small> R$ 4.250,00 </small> </div>
+				<div class="dflex table_cell tbId1_13"> <small> R$ 4.200,00 </small> </div>
 				<div class="dflex table_cell tbId1_13irrpf"> <small> R$ 1.210,00 </small> </div>
 				<!-- option -->
 				<div class="dflex table_cell tbId1_acoes">
@@ -80,6 +80,89 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="dflex options_row">
+			<button @click="modalToggle" class="dflex btn btn_fill">
+				<small> Adicionar fonte </small>
+				<span class="material-icons"> attach_money </span>
+			</button>
+		</div>
+
+		<ModalRendJuridica v-if="$store.state.getModal" />
+
+		<!-- Pessoa Física -->
+
+		<h3 class="section_title"> Rend. Tributáveis recebidos de Pessoa Física </h3>
+
+	<!-- Rend. Pessoa Juridica (hidden field) -->
+
+	<div v-if="!question[1]" class="dflex hiddenfield_question">
+		<span class="material-icons"> help_outline </span>
+		<div class="dflex question_body">
+			<p>
+				Você possuí rendimentos advindos de pessoa Jurídica Física? Exemplo: Familiares ou amigos.
+			</p>
+				<div class="dflex btn_group">
+					<button @click="showHiddenField(1)" class="dflex btn btn_fill">
+						<small> Sim </small>
+					</button>
+
+					<button @click="showHiddenField(1)" class="dflex btn">
+						<small> Não </small>
+					</button>
+				</div>
+		</div>
+	</div>
+
+	<div v-if="question[1]" class="hidden_field">
+
+		<RadioBox
+			option1="Possuo renda advinda de Pessoas Físicas"
+			option2="Não possuo renda advinda de Pessoas Físicas"
+			radioName="rendaPessoaFisica"
+		/>
+
+		<!-- Tabela: Rend. Pessoa Física -->
+		<div class="dflex table_area">
+			<!-- head -->
+			<div class="dflex table_row table_head">
+				<div class="dflex table_cell tbId1_number"> <strong> # </strong> </div>
+				<div class="dflex table_cell tbId1_fonteNome"> <strong> Nome </strong> </div>
+				<div class="dflex table_cell tbId1_fonteCnpj"> <strong> CPF da fonte </strong> </div>
+				<div class="dflex table_cell tbId1_rendimentos"> <strong> Rendimentos recebidos </strong> </div>
+				<div class="dflex table_cell tbId1_previdencia"> <strong> Previdência </strong> </div>
+				<div class="dflex table_cell tbId1_impostoRetido"> <strong> Imposto retido </strong> </div>
+				<div class="dflex table_cell tbId1_13"> <strong> 13° Salário </strong> </div>
+				<div class="dflex table_cell tbId1_13irrpf"> <strong> IRRF sobre 13° </strong> </div>
+				<div class="dflex table_cell tbId1_acoes"> <strong> Ações </strong> </div>
+			</div>
+			<!-- body -->
+			<div class="dflex table_row table_body" v-for="(i, index) in 7" :key="index">
+				<div class="dflex table_cell tbId1_number"> <small> {{ index }} </small> </div>
+				<div class="dflex table_cell tbId1_fonteNome"> <small> Leandro Thales Teixeira </small> </div>
+				<div class="dflex table_cell tbId1_fonteCnpj"> <small> 529.146.331-73 </small> </div>
+				<div class="dflex table_cell tbId1_rendimentos"> <small> R$ 2.550,00 </small> </div>
+				<div class="dflex table_cell tbId1_previdencia"> <small> R$ 830,00 </small> </div>
+				<div class="dflex table_cell tbId1_impostoRetido"> <small> R$ 550,00 </small> </div>
+				<div class="dflex table_cell tbId1_13"> <small> R$ 200,00 </small> </div>
+				<div class="dflex table_cell tbId1_13irrpf"> <small> R$ 1.210,00 </small> </div>
+				<!-- option -->
+				<div class="dflex table_cell tbId1_acoes">
+					<button class="dflex table_option"> <span class="material-icons"> edit </span> <small> Editar </small> </button>
+				</div>
+			</div>
+		</div>
+
+		<div class="dflex options_row">
+			<button @click="modalToggle" class="dflex btn btn_fill">
+				<small> Adicionar pessoa </small>
+				<span class="material-icons"> attach_money </span>
+			</button>
+		</div>
+
+	</div>
+
+
 
 	</div>
 
@@ -89,25 +172,30 @@
 
 <script>
 
-import InputTextBox from '../form/InputTextBox.vue'
+import ModalRendJuridica from '../modals/ModalRendJuridica.vue'
 import RadioBox from '../form/RadioBox.vue'
 import SelectBox from '../form/SelectBox.vue'
+import { mapActions } from 'vuex'
 
 export default {
 
 	name: 'Step3Rendimentos',
 
 	components: {
-		InputTextBox, RadioBox, SelectBox
+		RadioBox, SelectBox, ModalRendJuridica
 	},
 
 	data() {
 		return {
-			question: [true, true]
+			question: [false, false]
 		}
 	},
 
 	methods: {
+		...mapActions([
+			'modalToggle'
+		]),
+
 		showHiddenField (index) {
 			this.question[index] = !this.question[index]
 		}
@@ -142,6 +230,18 @@ export default {
 
 	.tbId1_number strong, .tbId1_number small {
 		font-weight: 600;
+	}
+
+	@media (max-width: 576px) {
+	.tbId1_number {width: 50px;}
+	.tbId1_fonteNome {width: 200px;}
+	.tbId1_fonteCnpj {width: 200px;}
+	.tbId1_rendimentos {width: 200px;}
+	.tbId1_previdencia {width: 200px;}
+	.tbId1_impostoRetido {width: 200px;}
+	.tbId1_13 {width: 200px;}
+	.tbId1_13irrpf {width: 200px;}
+	.tbId1_acoes {width: 200px;}
 	}
 
 </style>

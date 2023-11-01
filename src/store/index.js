@@ -8,6 +8,9 @@ export default createStore({
 		// setp focus
 		stepFocus: 1,
 
+		// modal
+		getModal: false,
+
 		// Value Storage
 		declaracaoAnteriorNumero: '',
 
@@ -17,6 +20,10 @@ export default createStore({
   mutations: {
   },
   actions: {
+		modalToggle () {
+			this.state.getModal = !this.state.getModal
+			console.log('aqui')
+		}
   },
   modules: {
   }
