@@ -321,3 +321,77 @@
 			}
 
 }
+
+/* Cálculo */
+
+.payment_choice {
+	margin-top: 34px;
+}
+	.payment_card {
+		border-radius: 5px;
+		border: 1px solid #D7D6D7;
+		background: #FFF;
+		padding: 21px;
+		flex-direction: column;
+	}
+
+		.payment_card, .payment_head, .payment_info {
+			width: 100%;
+		}
+
+	.payment_choice .payment_card:first-child {
+		margin-right: 21px;
+	}
+
+	.payment_head {
+		align-items: center;
+		justify-content: space-between;
+	}
+		.payment_head .radio_container {
+			font-size: .8em;
+		}
+			.payment_head .radio_container .checkmark_container {
+				transform: translateY(5px);
+			}
+
+		.aqt_eft {
+			font-size: .75em;
+		}
+			.aqt_eft strong {
+				font-weight: 600;
+			}
+
+		.payment_info {
+			margin-top: 21px;
+			align-items: flex-end;
+			justify-content: space-between;
+		}
+			.recommended_pay {
+				font-size: .7em;
+				font-weight: 600;
+				color: var(--azul);
+			}
+
+@media (max-width: 576px) {
+	.payment_choice {
+		flex-direction: column;
+	}
+	.payment_choice .payment_card:first-child {
+		margin: 0px;
+		margin-bottom: 21px;
+	}
+		.payment_head {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+			.payment_head .radio_container {
+				width: 100%;
+				border-bottom: 1px solid var(--wht-3);
+				padding-bottom: 21px;
+			}
+
+		.aqt_eft {
+			margin-top: 21px;
+		}
+}

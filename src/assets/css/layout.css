@@ -150,3 +150,15 @@
 	.section_title_redux {
 		font-size: 1em;
 	}
+
+.building_alert {
+	justify-content: space-between;
+	align-items: center;
+	padding: 13px 21px;
+	background: #F9D2D2;
+	border: 1px solid var(--rosa);
+	border-radius: 8px;
+}
+	.building_alert span {
+		color: var(--rosa);
+	}

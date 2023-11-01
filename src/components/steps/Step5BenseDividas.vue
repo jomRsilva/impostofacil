@@ -4,6 +4,11 @@
 
 	<h1 class="setp_title"> ETAPA 5: Bens e dívidas</h1>
 
+	<div class="dflex building_alert">
+		<span class="material-icons"> construction </span>
+		<small> Em construção </small>
+	</div>
+
 </div>
 
 </template>

@@ -4,6 +4,11 @@
 
 	<h1 class="setp_title"> ETAPA 6: Bens e rendimentos extras</h1>
 
+	<div class="dflex building_alert">
+		<span class="material-icons"> construction </span>
+		<small> Em construção </small>
+	</div>
+
 </div>
 
 </template>
