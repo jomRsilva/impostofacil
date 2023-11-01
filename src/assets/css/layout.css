@@ -162,3 +162,50 @@
 	.building_alert span {
 		color: var(--rosa);
 	}
+
+/* conclusao */
+
+.conclusao {
+	width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+	.conclusao img {
+		height: 200px;
+		filter: opacity(.05);
+	}
+
+	.conclusao h1 {
+		margin-top: 34px;
+		font-size: 3em;
+	}
+
+	.conclusao p {
+		margin-top: 13px;
+		font-size: .9em;
+	}
+
+	.conclusao a {
+		margin-top: 21px;
+	}
+
+@media (max-width: 576px) {
+	.conclusao {
+		padding: 21px;
+	}
+	.conclusao img {
+		height: 150px;
+	}
+	.conclusao h1 {
+		margin-top: 34px;
+		font-size: 2em;
+		line-height: 1.25em;
+	}
+	.conclusao p {
+		margin-top: 13px;
+		font-size: .8em;
+	}
+}
