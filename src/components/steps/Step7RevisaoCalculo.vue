@@ -99,6 +99,94 @@
 
 	</div>
 
+	<hr class="blankspace small_blkspc">
+
+	<h3 class="section_title"> Imprimir/Salvar documentos  </h3>
+
+	<hr class="blankspace small_blkspc">
+
+	<p class="setp_par">
+		Uma vez realizado todo o processo de preenchimento das informações, revisão e escolha do cálculo, recomendamos fortemente que salve todos os documentos abaixo para que sejam impressos e seguramente estimados por você.
+	</p>
+
+	<ul class="dflex documents_list">
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Declaração </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Rendimentos recebidos de PF </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Recibo </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Darf do IRPF </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Darf de Multa por entrega em atraso </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Darf - doações diretamente na declaração - ECA </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+		<li class="dflex">
+			<p> <span class="material-icons"> description </span> <small> Darf - Doações diretamente na declaração - Pessoa idosa </small> </p>
+			<div class="dflex docs_btns">
+				<button> <span class="material-icons"> print </span> <small> Imprimir </small> </button>
+				<button> <span class="material-icons"> file_download </span> <small> Baixar Arquivo </small> </button>
+			</div>
+		</li>
+
+	</ul>
+
+		<div id="downloadAllFiles" class="dflex options_row">
+			<button class="dflex btn btn_fill">
+				<small> Baixar todos </small>
+				<span class="material-icons"> file_download </span>
+			</button>
+		</div>
+
+	<hr class="blankspace small_blkspc">
+
+	<h3 class="section_title"> Entregar declaração  </h3>
+
+	<hr class="blankspace small_blkspc">
+
+	<p class="setp_par">
+		Ao clicar no botão “entregar declaração” você concluí todo o processo da declaração do imposto de renda.
+		Em caso de erros, você pode acessar a opção: Declaração retificadora, presente no painel inicial
+	</p>
+
 </div>
 
 </template>

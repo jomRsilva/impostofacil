@@ -395,3 +395,120 @@
 			margin-top: 21px;
 		}
 }
+
+/* Documents List */
+
+.documents_list {
+	flex-direction: column;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid var(--wht-3);
+	background: #fff;
+	margin-top: 34px;
+}
+	.documents_list li {
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		height: 55px;
+		padding: 0 21px;
+		transition: .1s ease-in-out;
+	}
+		.documents_list li p {
+			display: inherit;
+			align-items: center;
+		}
+			.documents_list li p small {
+				font-size: .9em;
+				font-weight: 400;
+				margin-left: 13px;
+			}
+			.documents_list li p span {
+				transform: translateY(-2px);
+			}
+
+	.docs_btns {
+		align-items: center;
+	}
+		.docs_btns button {
+			display: inherit;
+			align-items: center;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+			.docs_btns button:first-child {
+				margin-right: 13px;
+			}
+
+			.docs_btns button span {
+				margin-right: 8px;
+			}
+			.docs_btns button small {
+				font-size: .9em;
+				font-weight: 600;
+			}
+
+			.docs_btns button:hover * {
+				color: var(--azul);
+			}
+
+			.docs_btns button:hover small {
+				text-decoration: underline;
+			}
+
+	.documents_list li:nth-child(even) {
+		background: var(--wht-2);
+	}
+		.documents_list li:hover {
+			background: var(--wht-3);
+		}
+
+@media (max-width: 576px) {
+	.documents_list {
+		background: none;
+		border: none;
+	}
+		.documents_list li {
+			margin-bottom: 13px;
+			flex-direction: column;
+			width: 100%;
+			border-radius: 8px;
+			border: 1px solid var(--wht-3);
+			background: #fff;
+			align-items: flex-start;
+			padding: 21px;
+			height: min-content;
+			min-height: 89px;
+			box-shadow: 0 5px 8px -3px rgba(0,0,0,.08);
+		}
+			.documents_list li:nth-child(even) {
+				background: #fff;
+			}
+
+			.documents_list li p span {
+				color: var(--wht-6);
+			}
+
+			.documents_list li p small {
+				font-size: .8em;
+			}
+
+		.docs_btns {
+			justify-content: flex-end;
+			border-top: 1px solid var(--wht-3);
+			padding-top: 21px;
+			margin-top: 13px;
+			width: 100%;
+		}
+			.docs_btns button small {
+				font-size: .8em;
+			}
+			.docs_btns button span {
+				font-size: 1.6em;
+			}
+
+		#downloadAllFiles {
+			margin: 13px 0;
+		}
+}

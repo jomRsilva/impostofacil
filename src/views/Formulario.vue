@@ -14,7 +14,7 @@
 	<Step7RevisaoCalculo v-if="$store.state.stepFocus === 7" />
 
 	<!-- Next -->
-	<div class="dflex form_next_step">
+	<div v-if="$store.state.stepFocus !== 7" class="dflex form_next_step">
 		<p>
 			Para continuar clique em próxima etapa ou no próximo item da lista de etapas.
 		</p>
@@ -22,6 +22,14 @@
 			<small> Próxima etapa </small>
 			<span class="material-icons"> arrow_forward </span>
 		</button>
+	</div>
+
+	<!-- Finish -->
+	<div v-if="$store.state.stepFocus === 7" class="dflex form_next_step">
+		<router-link to="/conclusao" class="dflex btn btn_fill">
+			<small> Entregar declaração </small>
+			<span class="material-icons"> send </span>
+		</router-link>
 	</div>
 
 </main>
